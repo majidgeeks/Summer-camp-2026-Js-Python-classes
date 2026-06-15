@@ -29,12 +29,12 @@
 // === user for value + data type
 
 
-let num1 = 10 // number
-let user = false // boolean
-let numeric = 20 // number
-let num2 = '10' // string
+// let num1 = 10 // number
+// let user = false // boolean
+// let numeric = 20 // number
+// let num2 = '10' // string
 
-// if(num1 < 9 || num2 == 10){
+// if(num1 < 9 || num2 === 10){
 //   alert('you are right')
 //   console.log('right')
 // }else{
