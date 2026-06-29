@@ -1,0 +1,401 @@
+// ==========================================
+// JavaScript Functions Practice
+// ==========================================
+
+
+
+// ==========================================
+// Example 1 - Simple Function
+// ==========================================
+
+function hello() {
+    console.log("Hello World");
+}
+
+hello();
+
+
+
+// ==========================================
+// Example 2 - Function Call Multiple Times
+// ==========================================
+
+function welcome() {
+    console.log("Welcome to Saylani");
+}
+
+welcome();
+welcome();
+welcome();
+
+
+
+// ==========================================
+// Example 3 - Function with One Parameter
+// ==========================================
+
+function greet(name) {
+    console.log(name);
+}
+
+greet("Majid");
+greet("Ali");
+greet("Ahmed");
+
+
+
+// ==========================================
+// Example 4 - Two Parameters
+// ==========================================
+
+function student(name, age) {
+    console.log(name);
+    console.log(age);
+}
+
+student("Ali",20);
+
+
+
+// ==========================================
+// Example 5 - Three Parameters
+// ==========================================
+
+function studentInfo(name, age, city) {
+    console.log(name);
+    console.log(age);
+    console.log(city);
+}
+
+studentInfo("Majid",25,"Karachi");
+
+
+
+// ==========================================
+// Example 6 - Addition
+// ==========================================
+
+function add(num1, num2) {
+    console.log(num1 + num2);
+}
+
+add(10,20);
+
+
+
+// ==========================================
+// Example 7 - Subtraction
+// ==========================================
+
+function subtract(a,b){
+    console.log(a-b);
+}
+
+subtract(50,20);
+
+
+
+// ==========================================
+// Example 8 - Multiplication
+// ==========================================
+
+function multiply(a,b){
+    console.log(a*b);
+}
+
+multiply(5,6);
+
+
+
+// ==========================================
+// Example 9 - Division
+// ==========================================
+
+function divide(a,b){
+    console.log(a/b);
+}
+
+divide(20,5);
+
+
+
+// ==========================================
+// Example 10 - Even Odd
+// ==========================================
+
+function evenOdd(number){
+
+    if(number % 2 == 0){
+        console.log("Even");
+    }else{
+        console.log("Odd");
+    }
+
+}
+
+evenOdd(10);
+evenOdd(17);
+
+
+
+// ==========================================
+// Example 11 - Positive Negative
+// ==========================================
+
+function checkNumber(num){
+
+    if(num >= 0){
+        console.log("Positive");
+    }else{
+        console.log("Negative");
+    }
+
+}
+
+checkNumber(50);
+checkNumber(-10);
+
+
+
+// ==========================================
+// Example 12 - Voting Eligibility
+// ==========================================
+
+function vote(age){
+
+    if(age >= 18){
+        console.log("Eligible");
+    }else{
+        console.log("Not Eligible");
+    }
+
+}
+
+vote(22);
+vote(14);
+
+
+
+// ==========================================
+// Example 13 - Login System
+// ==========================================
+
+function login(email,password){
+
+    if(email=="admin@gmail.com" && password=="123"){
+        console.log("Login Successful");
+    }else{
+        console.log("Invalid Credentials");
+    }
+
+}
+
+login("admin@gmail.com","123");
+login("abc@gmail.com","111");
+
+
+
+// ==========================================
+// Example 14 - Grade System
+// ==========================================
+
+function grade(marks){
+
+    if(marks>=80){
+        console.log("A+");
+    }
+    else if(marks>=70){
+        console.log("A");
+    }
+    else if(marks>=60){
+        console.log("B");
+    }
+    else if(marks>=50){
+        console.log("C");
+    }
+    else{
+        console.log("Fail");
+    }
+
+}
+
+grade(88);
+grade(45);
+
+
+
+// ==========================================
+// Example 15 - Table
+// ==========================================
+
+function table(number){
+
+    for(let i=1;i<=10;i++){
+        console.log(number + " x " + i + " = " + number*i);
+    }
+
+}
+
+table(5);
+
+
+
+// ==========================================
+// Example 16 - Countdown
+// ==========================================
+
+function countdown(){
+
+    for(let i=10;i>=1;i--){
+        console.log(i);
+    }
+
+}
+
+countdown();
+
+
+
+// ==========================================
+// Example 17 - Prompt Inside Function
+// ==========================================
+
+function userName(){
+
+    let name = prompt("Enter Your Name");
+
+    console.log(name);
+
+}
+
+userName();
+
+
+
+// ==========================================
+// Example 18 - Return Keyword
+// ==========================================
+
+function add(a,b){
+
+    return a+b;
+
+}
+
+let answer = add(10,20);
+
+console.log(answer);
+
+
+
+// ==========================================
+// Example 19 - Square Number
+// ==========================================
+
+function square(num){
+
+    return num*num;
+
+}
+
+let result = square(6);
+
+console.log(result);
+
+
+
+// ==========================================
+// Example 20 - Cube Number
+// ==========================================
+
+function cube(num){
+
+    return num*num*num;
+
+}
+
+console.log(cube(3));
+
+
+
+// ==========================================
+// Example 21 - Difference Between Console and Return
+// ==========================================
+
+function sum1(a,b){
+
+    console.log(a+b);
+
+}
+
+let result1 = sum1(10,20);
+
+console.log(result1);
+
+
+
+// ==========================================
+// Example 22
+// ==========================================
+
+function sum2(a,b){
+
+    return a+b;
+
+}
+
+let result2 = sum2(10,20);
+
+console.log(result2);
+
+
+
+// ==========================================
+// Example 23 - Function Calling Function
+// ==========================================
+
+function hello(){
+    console.log("Hello");
+}
+
+function welcome(){
+
+    hello();
+
+    console.log("Welcome");
+
+}
+
+welcome();
+
+
+
+// ==========================================
+// Example 24 - Default Parameter
+// ==========================================
+
+function greet(name="Guest"){
+
+    console.log(name);
+
+}
+
+greet();
+greet("Majid");
+
+
+
+// ==========================================
+// Example 25 - Mini Calculator
+// ==========================================
+
+function calculator(a,b){
+
+    console.log("Addition :",a+b);
+    console.log("Subtraction :",a-b);
+    console.log("Multiplication :",a*b);
+    console.log("Division :",a/b);
+
+}
+
+calculator(20,10);
